@@ -19,8 +19,8 @@ const RobotVisualizer: React.FC = () => {
   const signals = [
     { id: 'forward', label: 'Едет вперед', color: '#22c55e', type: 'antenna' },
     { id: 'stop', label: 'Остановился', color: '#ef4444', type: 'antenna' },
-    { id: 'left', label: 'Поворот налево', color: '#f97316', type: 'blinker-left' },
-    { id: 'right', label: 'Поворот направо', color: '#f97316', type: 'blinker-right' },
+    { id: 'left', label: 'Поворот налево', color: '#ef4444', type: 'blinker-left' },
+    { id: 'right', label: 'Поворот направо', color: '#ef4444', type: 'blinker-right' },
   ];
   const [signalIndex, setSignalIndex] = useState(0);
   const currentSignal = signals[signalIndex];
@@ -259,7 +259,7 @@ const RobotVisualizer: React.FC = () => {
                                                       <motion.div
                                                         animate={{ opacity: [0.1, 1, 0.1] }}
                                                         transition={{ duration: 0.5, repeat: Infinity }}
-                                                        className="w-full h-full bg-orange-500 rounded-full shadow-[0_0_15px_#f97316]"
+                                                        className="w-full h-full bg-red-500 rounded-full shadow-[0_0_15px_#ef4444]"
                                                       />
                                                  </div>
                                             </div>
@@ -336,7 +336,7 @@ const RobotVisualizer: React.FC = () => {
                                      <motion.div
                                         animate={{ opacity: currentSignal.id === 'left' ? [0.1, 1, 0.1] : 0 }}
                                         transition={{ duration: 0.5, repeat: Infinity }}
-                                        className="w-full h-full bg-orange-500 rounded-full shadow-[0_0_10px_#f97316]"
+                                        className="w-full h-full bg-red-500 rounded-full shadow-[0_0_10px_#ef4444]"
                                      />
                                 </div>
                                 
@@ -344,7 +344,7 @@ const RobotVisualizer: React.FC = () => {
                                      <motion.div
                                         animate={{ opacity: currentSignal.id === 'right' ? [0.1, 1, 0.1] : 0 }}
                                         transition={{ duration: 0.5, repeat: Infinity }}
-                                        className="w-full h-full bg-orange-500 rounded-full shadow-[0_0_10px_#f97316]"
+                                        className="w-full h-full bg-red-500 rounded-full shadow-[0_0_10px_#ef4444]"
                                      />
                                 </div>
 
