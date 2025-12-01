@@ -46,21 +46,28 @@ const App: React.FC = () => {
             </motion.p>
         </div>
 
-        <motion.div 
+        <motion.button 
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 1, duration: 1 }}
-            className="absolute bottom-12 left-1/2 -translate-x-1/2"
+            className="absolute bottom-12 left-1/2 -translate-x-1/2 p-3 rounded-full hover:bg-white/5 focus:outline-none"
+            onClick={() => {
+              const target = document.getElementById('section-city');
+              if (target) {
+                target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+              }
+            }}
+            aria-label="Перейти к разделу Городская среда"
         >
             <ChevronDown className="animate-bounce text-gray-500 w-8 h-8" />
-        </motion.div>
+        </motion.button>
       </header>
 
-      <section className="py-24 px-4 md:px-8 max-w-7xl mx-auto relative z-10">
+      <section id="section-city" className="py-24 px-4 md:px-8 max-w-7xl mx-auto relative z-10">
         <div className="mb-12">
             <h2 className="text-3xl font-bold mb-4 flex items-center gap-3">
                 <span className="text-purple-500">01.</span>
-                <span className="text-white">Городская Среда</span>
+                <span className="text-white">Мини-карта</span>
             </h2>
             <div className="h-[1px] w-full bg-gray-800"></div>
         </div>
