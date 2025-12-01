@@ -17,9 +17,10 @@ const DeliveryScenario: React.FC = () => {
       
       <div className="sticky top-0 left-0 w-full z-50 bg-[#050505] border-b border-gray-800 py-4 shadow-2xl">
           <div className="container mx-auto px-4 md:px-16 relative">
-              <div className="flex items-center justify-between mb-3">
-                  <h2 className="text-sm md:text-base font-semibold text-gray-300 tracking-wide uppercase">
-                    <span className="text-yellow-400 mr-2">04.</span> Сценарий выполнения заказа
+              <div className="flex items-center justify-between mb-4">
+                  <h2 className="text-2xl md:text-3xl font-bold text-white flex items-center gap-3">
+                    <span className="text-yellow-400">03.</span>
+                    <span>Сценарий выполнения заказа</span>
                   </h2>
               </div>
               <div className="relative h-2 w-full bg-gray-800 rounded-full flex items-center justify-between">
