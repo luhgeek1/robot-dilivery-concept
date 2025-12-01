@@ -5,6 +5,7 @@ import CitySimulation from './components/CitySimulation';
 import RobotVisualizer from './components/RobotVisualizer';
 import InfoSection from './components/InfoSection';
 import DeliveryScenario from './components/DeliveryScenario';
+import ClusterHubIllustration from './components/ClusterHubIllustration';
 
 const App: React.FC = () => {
   return (
@@ -93,6 +94,10 @@ const App: React.FC = () => {
 
       <section className="py-24 relative z-10">
          <InfoSection />
+      </section>
+
+      <section className="relative z-10">
+         <ClusterHubIllustration />
       </section>
 
       <footer className="py-12 border-t border-gray-900 text-center text-gray-600 text-sm">

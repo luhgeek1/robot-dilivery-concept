@@ -83,7 +83,7 @@ const DeliveryScenario: React.FC = () => {
                  <div className="relative w-full max-w-5xl h-[500px] bg-sky-900/10 rounded-3xl overflow-hidden border border-gray-800 shadow-2xl">
                      
                      
-                     <div className="absolute inset-0 bg-gradient-to-b from-[#0f172a] to-[#1e293b]"></div>
+                     <div className="absolute inset-0 bg-gradient-to-b from-[#3b82f6] via-[#1d4ed8] to-[#0f172a]"></div>
 
                      
                      <div className="absolute bottom-24 right-32 w-2 h-96 bg-gray-800 z-10">
