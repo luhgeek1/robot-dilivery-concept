@@ -103,7 +103,7 @@ const DeliveryScenario: React.FC = () => {
                             
                             
                             <div className="absolute top-8 left-1/2 -translate-x-1/2 w-3/4 h-12 bg-white rounded-lg flex items-center justify-center shadow-lg border-2 border-gray-200">
-                                <span className="text-purple-900 font-bold text-xl tracking-widest">ПВЗ • HUB</span>
+                                <span className="text-purple-900 font-bold text-xl tracking-widest">ПВЗ</span>
                             </div>
 
                             
