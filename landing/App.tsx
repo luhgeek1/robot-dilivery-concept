@@ -22,7 +22,7 @@ const App: React.FC = () => {
                 className="flex items-center justify-center gap-3 text-purple-400 mb-4"
             >
                 <Hexagon size={24} className="fill-purple-400/20" />
-                <span className="uppercase tracking-[0.2em] text-sm font-bold">Центральный Университет</span>
+                <span className="tracking-[0.2em] text-sm font-bold">by Vasiliev Stepan</span>
             </motion.div>
 
             <motion.h1 

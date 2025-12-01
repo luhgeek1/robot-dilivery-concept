@@ -54,6 +54,10 @@ const RobotVisualizer: React.FC = () => {
 
   const currentStatusColor = STATUS_COLORS[config.status];
   const currentBodyColor = BODY_COLORS[config.color];
+  const robotMessage =
+    config.color === RobotColor.YELLOW
+      ? 'Я доставляю посылки'
+      : 'Я доставляю еду';
 
   return (
     <div className="w-full bg-gray-900/50 rounded-3xl p-6 md:p-12 border border-gray-800">
@@ -484,7 +488,7 @@ const RobotVisualizer: React.FC = () => {
                             
                             <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-center w-full px-4 z-50 pointer-events-none">
                                 <h2 className="text-black/60 font-bold text-xl uppercase tracking-widest p-0 inline-block">
-                                    Я робот доставщик!
+                                    {robotMessage}
                                 </h2>
                             </div>
 
